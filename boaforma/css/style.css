@@ -110,6 +110,29 @@ body {
     text-align:center;
 }
 
+/* SERVIÇOS */
+.servicos{ 
+    background-image: url('../img/textura2.png');
+    color:#fff;
+}
+
+.servicos h2{
+    font-size: 2rem;
+    text-transform: uppercase;  
+}
+
+.servicos h2::after{
+    content: '';
+    display: block;
+    border-top: 1px solid #2dc7d4;
+    margin: 15px auto;
+    width: 100px;
+}
+
+.servicos .btn-horario{
+    padding-bottom: 2em;
+}
+
 /* CUSTOM */
 nav {
   color: #fff;
@@ -152,6 +175,25 @@ nav i.material-icons {
     margin-bottom: 0;
 }
 
+.tabs{
+     background-color: #222;
+}
+
+.tabs .tab a{
+    color:#fff;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    color:#2dc7d4;
+}
+
+.tabs .indicator {
+    background-color:#2dc7d4;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: transparent;
+}
 /*MEDIA*/
 @media only screen and (max-width: 480px) {
 
