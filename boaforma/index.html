@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
@@ -20,11 +21,11 @@
     <header>
       <!-- MENU MOBILE-->
       <ul class="sidenav" id="menu-mobile">
-        <li><a class="hide-menu" href="#home">Home</a></li>
-        <li><a class="hide-menu" href="#sobre">Sobre o Boa Forma</a></li>
-        <li><a class="hide-menu" href="#servicos">Serviços</a></li>
-        <li><a class="hide-menu" href="#unidades">Unidades</a></li>
-        <li><a class="hide-menu" href="#contato">Contato</a></li>
+        <li><a class="sidenav-close" href="#home">Home</a></li>
+        <li><a class="sidenav-close" href="#sobre">Sobre o Boa Forma</a></li>
+        <li><a class="sidenav-close" href="#servicos">Serviços</a></li>
+        <li><a class="sidenav-close" href="#unidades">Unidades</a></li>
+        <li><a class="sidenav-close" href="#contato">Contato</a></li>
       </ul>
 
       <div class="navbar-fixed">
@@ -613,6 +614,76 @@
       </div>
     </section>
 
+    <!-- CONTATO -->
+    <section class="contato bloco scrollspy" id="contato">
+      <div class="row container">
+        <div class="col s12 center">
+          <h2 class="titulo light black-text">Contato</h2>
+        </div>
+
+        <div class="col s12 m6 l4 hide-on-med-only">
+          <div class="mapa transparent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0992005370827!2d-38.46927708579114!3d-12.965503690859885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b6280fbf113%3A0x6c816c9e3e3bf3fb!2sNode%20Studio%20Treinamentos!5e0!3m2!1spt-BR!2sbr!4v1598987493405!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="informacoes white-text">
+            <h4>Redes Sociais</h4>
+            <p class="light">Fique por dentro das novidades da empresa bla e isso ai e mais tabom e isso ae ok ne entao e isso ae.</p>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-google"></i></a>
+
+            <h4>Endereço</h4>
+            <p class="light">Rua paraíso, 123 <br>
+            Centro, Itabuna - Ba
+            </p>
+
+            <h4>Contatos</h4>
+            <p class="light">
+              (73) 1231231<br>
+              (73) 1231231<br>
+              (73) 1231231
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="formulario white black-text">
+            <h4>Fale Conosco</h4>
+            <p class="light">Fique por dentro das novidades da empresa bla e isso ai e mais tabom e isso ae ok ne entao e isso ae.</p>
+
+            <form action="light" method="post">
+              <div class="input-field">
+                <input type="text" name="name" id="name">
+                <label for="name">Seu Nome</label>
+              </div>
+
+              <div class="input-field">
+                <input type="email" name="email" id="email">
+                <label for="email">Seu Email</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" name="subject" id="subject">
+                <label for="subject">Assunto</label>
+              </div>
+
+              <div class="input-field">
+                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                <label for="message">Mensagem</label>
+              </div>
+
+              <button class="btn blue-logo" type="submit">Enviar</button>
+            
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- MATERIALIZE -->
@@ -638,10 +709,6 @@
         $(".modal").modal();
         // TABS
         $(".tabs").tabs();
-        // ESCONDER MENU AO CLICAR
-        $(".hide-menu").click(function (){
-            $(".button-collapse").sideNav(".hide");
-        });
         // AUTOPLAY
         function autoplay(){
           $(".carousel").carousel("next");
