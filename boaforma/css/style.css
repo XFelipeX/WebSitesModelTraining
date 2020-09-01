@@ -132,7 +132,9 @@ body {
     background-attachment: fixed;
 }
 
-
+.unidades article p{
+    line-height: 2rem;
+}
 
 /* CUSTOM */
 nav.nav-extended .nav-wrapper {
